@@ -8,7 +8,7 @@ export interface TopicManager {
     /**
      * Returns the outputs from the transaction that are admissible.
      * @param {Array<Output>} previousUTXOs - UTXOs belonging to the current topic being spent as input in the transaction
-     * @param {Object} parsedTransaction - transaction containing outputs to admit into the current topic
+     * @param {Transaction} parsedTransaction - transaction containing outputs to admit into the current topic
      */
     identifyAdmissibleOutputs({previousUTXOs, parsedTransaction}: {previousUTXOs: Array<Output>, parsedTransaction: Transaction}): Promise<number[] | AdmissableOutputs>
 }
