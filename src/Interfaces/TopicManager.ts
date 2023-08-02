@@ -11,7 +11,16 @@ export interface TopicManager {
    * @param {Transaction} parsedTransaction - transaction containing outputs to admit into the current topic
    */
   identifyAdmissibleOutputs({ previousUTXOs, parsedTransaction }: { previousUTXOs: Array<Output>, parsedTransaction: Transaction }): Promise<number[] | AdmissableOutputs>
+
+   /**
+   * Returns a Markdown-formatted documentation string for the topic manager.
+   */
   getDocumentation?(): Promise<String>
+
+  /**
+   * Returns a metadata object that can be used to identify the topic manager.
+   */
+  getMetaData?(): Promise<{ name: String, shortDescription: String, iconURL?: String, version?: String, informationURL?: String }>
 }
 
 /**
