@@ -44,6 +44,6 @@
     "@babbage/sdk": "^0.4.33",
     "babbage-bsv": "^0.2.4",
     "cwi-base": "^0.3.92",
-    "cwi-external-services": "^0.3.72"
+    "cwi-external-services": "^0.3.73"
   }
 }
