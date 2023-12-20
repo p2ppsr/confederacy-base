@@ -1,6 +1,6 @@
 {
   "name": "confederacy-base",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Base classes, types, utilities for implementation support of Confederacy components.",
   "author": "Peer-to-peer Privacy Systems Research, LLC",
   "license": "Open BSV License",
